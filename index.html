@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>My Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><strong>My Portfolio</strong></a>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/ignaciocedeno/" target="_blank"
+								class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.github.com/nachc" target="_blank" class="icon brands fa-github"><span
+									class="label">GitHub</span></a></li>
+					</ul>
+				</header>
+
+				<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h1>Hi, I’m Ignacio</h1>
+							<p>Here you'll find my projects</p>
+						</header>
+						<p>I'm currently learning software development on my own time (plus what I
+							can learn in my job as a Technical Support Engineer). I aspire to be a Software Developer.
+							In
+							code I've found a beautiful world where I can get lost in, and enjoy the ride.<br></br>
+							I'm currently working as a Technical Support Engineer for Google Workspace (disclaimer:
+							not "at" Google). My interaction with code at work is limited to reviewing the code base as
+							the ultimate source of information when it comes to product funcionality and errors. As part
+							of my job I investigate, reproduce, document and
+							ultimately submit bugs to the Product Engineering Team.<br>
+							I also try to be lazy and automate my tasks using Python, you might find some scripts
+							here.</br><br>
+							Whichever the reason is for you to be here, I hope you at least get an idea of who I am and
+							how I think.<br><br>
+							Cheers!
+						</p>
+					</div>
+					<span class="image object">
+						<img src="images/portada.jpg" alt="" />
+					</span>
+				</section>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Interests</h2>
+					</header>
+					<div class="features">
+						<article>
+							<span class="icon brands fa-android"></span>
+							<div class="content">
+								<h3>Android</h3>
+								<p>With billions of devices inside pockets around the world, the potential that Android
+									has to turn an idea into an App that can impact so many people, is something that
+									drives motivation. I enjoy the Android ecosystem and it's potential.</p>
+							</div>
+						</article>
+						<article>
+							<span class="icon brands solid fa-java"></span>
+							<div class="content">
+								<h3>Java</h3>
+								<p>A language like Java resonates quite well with my way of thinking. I don't mind the
+									verbosity, on the contrary, I like to see every aspect of the code as explicitly as
+									possible. Also, it's the first language that I had contact with back when I first
+									interacted with <a href="https://www.processing.org" target="_blank">Processing</a>.
+								</p>
+							</div>
+						</article>
+						<article>
+							<span class="icon brands fa-python"></span>
+							<div class="content">
+								<h3>Python</h3>
+								<p>No matter what I do, I always find myself back at Python. Usually for a script to
+									automate a task, or parse and process data for another program. I plan to dig deeper
+									into this language as I learn more about backend development.</p>
+							</div>
+						</article>
+						<article>
+							<span class="icon solid fa-server"></span>
+							<div class="content">
+								<h3>Backend</h3>
+								<p>Getting into backend development is something I'm working on. What I
+									like about it is that it's all about logic and processing data.</p>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Projects</h2>
+					</header>
+					<div class="posts">
+						<article>
+							<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
+							<h3>Dublin Bus Alarm</h3>
+							<ul>
+								<li>Android</li>
+								<li>Java</li>
+								<li>Firebase Realtime Database</li>
+								<li>GoogleMaps API</li>
+								<li>Python</li>
+							</ul>
+							<p>My dearest project (ongoing). When I used to live in Dublin, I would take the
+								bus to and from work, and quite often I'd see people sleeping on the bus. I wondered how
+								did the passengers know when to wake up to get out? Let me
+								tell you, Dublin Bus service is not known for it's punctuallity.
+								Maybe, there was a problem to fix! We usually use time based alarms to wake up, but
+								here, time is not an invariant. So, what doesn't change regarding a bus route? The route
+								itself! The sequence of stops will be the same, regardless of how long it takes for the
+								bus to do it.
+								Let's set an alarm based on location! And that's what Dublin Bus Alarm (I'm great with
+								names, I know) does.<br>
+								I would say my biggest challenge with this project was when the RESTful API I was using
+								was deprecated and replaced with GTFS.
+								As I only needed static data (no realtime data), I decided to parse all the GTFS files
+								and extract everything that I needed regarding the routes,
+								and structure that data in a way that retrieving it form Firebase would be easy.<br>
+								Find out more about this project on it's GitHub repo!
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/nachc/dublinbusalarm" target="_blank" class="button">See
+										in GitHub</a></li>
+							</ul>
+						</article>
+						<article>
+							<!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a> -->
+							<h3>ImportEmail</h3>
+							<ul>
+								<li>Python</li>
+								<li>Gmail API</li>
+								<li>PySimpleGUI</li>
+							</ul>
+							<p>This is an attempt to be more lazy and efficient at work. This script allows me to
+								import/insert an email message into my Gmail account by just authenticating and
+								selecting the file.
+								It will do the encoding to base64_url using base64 lib, and creating the API request and
+								calling the
+								Gmail API, which are the steps that take the most time. <br>
+								To make it even faster I also added a GUi (PySimpleGUI) that allow me to browse the .eml
+								or .txt file containing the email and import it with one click.
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/nachc/importemail" target="_blank" class="button">See in
+										GitHub</a></li>
+							</ul>
+						</article>
+						<article>
+							<!-- <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a> -->
+							<h3>Restaurant Menu App Udacity</h3>
+							<ul>
+								<li>Python</li>
+								<li>HTML</li>
+								<li>Flask</li>
+								<li>SQLAlchemy</li>
+							</ul>
+							<p>This is the final project for a <a
+									href="https://www.udacity.com/course/full-stack-foundations--ud088"
+									target="_blank">fullstack foundations course in Udacity</a>.
+								My interest was more on the backend side of things, as previously mentioned.<br>
+								Using Python, HTML, Flask and SQLAlchemy, and following the basic ideas behind agile
+								development, I implemented the CRUD funcionality in successive rounds of development:
+							<ol>
+								<li>Routing</li>
+								<li>Templates and Forms</li>
+								<li>Implementation of DB and CRUD funcionality</li>
+								<li>Basic JSON API endpoints</li>
+							</ol>
+							<ul class="actions">
+								<li><a href="https://github.com/nachc/fullstackfoundationsudacity" target="_blank"
+										class="button">See in GitHub</a></li>
+							</ul>
+						</article>
+						<article>
+							<!-- <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a> -->
+							<h3>Multiplayer TicTacToe</h3>
+							<ul>
+								<li>Javascript</li>
+								<li>HTML</li>
+								<li>Web Sockets</li>
+								<li>JQuery</li>
+							</ul>
+							<p>This project is for introducing myself to websockets, specifically
+								through Socket.io. Its focus was to learn about the connection and
+								communication between clients through a server, using websockets. <br>
+								Can be found here: <a href="https://tictactoe-ws.herokuapp.com/">TicTacToe</a><br><br>
+								<i>Note: AdBlock can cause problems with <strong>click</strong> events in Chrome.</i>
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/nachc/tictactoe-websockets" target="_blank"
+										class="button">See in GitHub</a></li>
+							</ul>
+						</article>
+					</div>
+				</section>
+
+				<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h1>Che! Qué Plato!</h1>
+							<p>OFF-TOPIC</p>
+						</header>
+						<p>This sections has nothing to do with programming, it's just so you know me a little bit
+							better. <br>
+							<strong><i>I. Love. Cooking.</strong></i> <br>
+							Cooking is my second favourite thing to do, and I think it's a perfect complement to
+							programming. Coding satisfies me at an intelectual level, scratches the itch to solve
+							problems using logic, while cooking takes care of my more
+							abstract, "artistic" side. <br>
+							<strong>Che! Qué Plato!</strong> is a food blog that started during the pandemic's lockdown,
+							cooking was
+							indeed of great help to go through those times. <br>
+							I'm currently working on remaking the site in Wordpress so I can continue to blog about this
+							second pasion of mine.
+						</p>
+						<a href="https://chequeplato.wordpress.com/" target="_blank">Blog</a> <br>
+						<a href="https://www.instagram.com/chequeplato" target="_blank"
+							class="icon brands fa-instagram"> Instagram</a>
+					</div>
+					<!-- <span class="image object">
+						<img src="images/portada.jpg" alt="" />
+					</span> -->
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
